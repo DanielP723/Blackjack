@@ -1,0 +1,4 @@
+C:\Users\Daniel\Desktop\VisualStudio\Nueva carpeta\API\obj\Debug\netcoreapp3.1\API.csprojAssemblyReference.cache
+C:\Users\Daniel\Desktop\VisualStudio\Nueva carpeta\API\obj\Debug\netcoreapp3.1\API.AssemblyInfoInputs.cache
+C:\Users\Daniel\Desktop\VisualStudio\Nueva carpeta\API\obj\Debug\netcoreapp3.1\API.AssemblyInfo.cs
+C:\Users\Daniel\Desktop\VisualStudio\Nueva carpeta\API\obj\Debug\netcoreapp3.1\API.csproj.CoreCompileInputs.cache
