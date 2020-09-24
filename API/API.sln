@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API.csproj", "{45591F2B-0931-40B4-9A31-F90BD3FE21C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API.csproj", "{45591F2B-0931-40B4-9A31-F90BD3FE21C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackjack", "..\Blackjack\Blackjack.csproj", "{E036F8FE-27A2-4EAD-A015-2701BD8574A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game", "..\Blackjack\Game.csproj", "{E036F8FE-27A2-4EAD-A015-2701BD8574A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

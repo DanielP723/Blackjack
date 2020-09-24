@@ -35,9 +35,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\VisualStudio\\Blackjack\\Blackjack\\Blackjack.csproj",
-      "projectName": "Blackjack",
-      "projectPath": "C:\\Users\\Daniel\\Desktop\\VisualStudio\\Blackjack\\Blackjack\\Blackjack.csproj",
+      "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\VisualStudio\\Blackjack\\Blackjack\\Game.csproj",
+      "projectName": "Game",
+      "projectPath": "C:\\Users\\Daniel\\Desktop\\VisualStudio\\Blackjack\\Blackjack\\Game.csproj",
       "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Daniel\\Desktop\\VisualStudio\\Blackjack\\Blackjack\\obj\\",
       "projectStyle": "PackageReference",

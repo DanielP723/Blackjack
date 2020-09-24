@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Blackjack"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow" Height="389" Width="598">
+    <Grid Margin="0,0,0,-6">
+        <Button Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="28,151,0,0" VerticalAlignment="Top" Height="39" Width="93" FontSize="18" FontFamily="Times New Roman" FontWeight="Bold" Background="Red" Click="btnStart_Click"/>
+        <Label Name="lblPrueba" HorizontalAlignment="Left" Height="299" Margin="248,33,0,0" VerticalAlignment="Top" Width="252"/>
     </Grid>
 </Window>

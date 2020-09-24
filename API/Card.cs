@@ -4,6 +4,7 @@ namespace API
 {
     public class Card
     {
+        
         string suit;
         int score;
         string symbol;
@@ -20,58 +21,55 @@ namespace API
             this.Symbol = symbol;
             if (suit == "♥" || suit == "♦")
             {
-                Color = "Rojo";
+                Color = "Red";
             }
             else
             {
-                Color = "Negro";
+                Color = "Black";
             }
             if (symbol == "A")
             {
                 Score = 1;
             }
-            else
+            if (symbol == "J" || symbol == "Q" || symbol == "K")
             {
-                if (symbol == "J" || symbol == "Q" || symbol == "K")
-                {
-                    Score = 10;
-                }
-                if (symbol == "2")
-                {
-                    Score = 2;
-                }
-                if (symbol == "3")
-                {
-                    Score = 3;
-                }
-                if (symbol == "4")
-                {
-                    Score = 4;
-                }
-                if (symbol == "5")
-                {
-                    Score = 5;
-                }
-                if (symbol == "6")
-                {
-                    Score = 6;
-                }
-                if (symbol == "7")
-                {
-                    Score = 7;
-                }
-                if (symbol == "8")
-                {
-                    Score = 8;
-                }
-                if (symbol == "9")
-                {
-                    Score = 9;
-                }
-                if (symbol == "10")
-                {
-                    Score = 10;
-                }
+                Score = 10;
+            }
+            if (symbol == "2")
+            {
+                Score = 2;
+            }
+            if (symbol == "3")
+            {
+                Score = 3;
+            }
+            if (symbol == "4")
+            {
+                Score = 4;
+            }
+            if (symbol == "5")
+            {
+                Score = 5;
+            }
+            if (symbol == "6")
+            {
+                Score = 6;
+            }
+            if (symbol == "7")
+            {
+                Score = 7;
+            }
+            if (symbol == "8")
+            {
+                Score = 8;
+            }
+            if (symbol == "9")
+            {
+                Score = 9;
+            }
+            if (symbol == "10")
+            {
+                Score = 10;
             }
         }
     }
