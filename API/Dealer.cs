@@ -43,7 +43,7 @@ namespace API
             int i = deck.Count;
             string carta = deck[i];
             deck.Remove(deck[i]);
-            return carta;
+            return carta ;
         }
         public void AddCard(string carta)
         {
@@ -53,8 +53,8 @@ namespace API
         {
             for (int i = 0; i < 3; i++)
             {
-                this.Deal(); 
 
+                AddCard(Deal(deck));
 
             }
             

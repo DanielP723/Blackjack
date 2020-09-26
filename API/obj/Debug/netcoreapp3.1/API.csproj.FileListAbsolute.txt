@@ -2,3 +2,12 @@ C:\Users\Daniel\Desktop\VisualStudio\Nueva carpeta\API\obj\Debug\netcoreapp3.1\A
 C:\Users\Daniel\Desktop\VisualStudio\Nueva carpeta\API\obj\Debug\netcoreapp3.1\API.AssemblyInfoInputs.cache
 C:\Users\Daniel\Desktop\VisualStudio\Nueva carpeta\API\obj\Debug\netcoreapp3.1\API.AssemblyInfo.cs
 C:\Users\Daniel\Desktop\VisualStudio\Nueva carpeta\API\obj\Debug\netcoreapp3.1\API.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\VisualStudio\Blackjack\API\obj\Debug\netcoreapp3.1\API.csprojAssemblyReference.cache
+C:\Users\Daniel\Desktop\VisualStudio\Blackjack\API\obj\Debug\netcoreapp3.1\API.AssemblyInfoInputs.cache
+C:\Users\Daniel\Desktop\VisualStudio\Blackjack\API\obj\Debug\netcoreapp3.1\API.AssemblyInfo.cs
+C:\Users\Daniel\Desktop\VisualStudio\Blackjack\API\obj\Debug\netcoreapp3.1\API.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\VisualStudio\Blackjack\API\bin\Debug\netcoreapp3.1\API.deps.json
+C:\Users\Daniel\Desktop\VisualStudio\Blackjack\API\bin\Debug\netcoreapp3.1\API.dll
+C:\Users\Daniel\Desktop\VisualStudio\Blackjack\API\bin\Debug\netcoreapp3.1\API.pdb
+C:\Users\Daniel\Desktop\VisualStudio\Blackjack\API\obj\Debug\netcoreapp3.1\API.dll
+C:\Users\Daniel\Desktop\VisualStudio\Blackjack\API\obj\Debug\netcoreapp3.1\API.pdb
