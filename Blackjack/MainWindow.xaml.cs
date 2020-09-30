@@ -44,6 +44,7 @@ namespace Blackjack
             d.Generate();
             d.Randomize();
             txtCartas.Text = " ";
+            txtPrueba.Text = " ";
             foreach (Card c in d.Deck)
             {
                 txtCartas.Text += c.Symbol + c.Suit + "";
@@ -52,10 +53,18 @@ namespace Blackjack
 
         private void btnPlantar_Click(object sender, RoutedEventArgs e)
         {
-            d = new Dealer();
-            Card c = d.Deal();
-            txtCartas.Text = c.Symbol + c.Suit;
-
+            txtPrueba.Text = "";
+            Card ca = d.Deal();
+            txtCartas.Text = " ";
+            d.Hand.Add(ca);
+            foreach (Card c in d.Deck)
+            {
+                txtCartas.Text += c.Symbol + c.Suit + " ";
+            }
+            foreach (Card c in d.Hand)
+            {
+                txtPrueba.Text += c.Symbol + c.Suit + " ";
+            }
         }
 
         private void btnAumentar_Click(object sender, RoutedEventArgs e)

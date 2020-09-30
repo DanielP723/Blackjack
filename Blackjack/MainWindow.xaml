@@ -36,5 +36,6 @@
         <Label Content=" ♥ ♦ APUESTAS ♣ ♠" HorizontalAlignment="Left" Margin="25,163,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Label Content=" ♥ ♦ SALDO ♣ ♠" HorizontalAlignment="Left" Margin="41,97,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Label Name="lblApuesta" Content="" HorizontalAlignment="Left" Margin="69,200,0,0" VerticalAlignment="Top" Width="112" FontSize="20"/>
+        <TextBlock Name="txtPrueba" HorizontalAlignment="Left" Margin="589,249,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="83" Width="160"/>
     </Grid>
 </Window>

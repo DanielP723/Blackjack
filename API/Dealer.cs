@@ -7,16 +7,17 @@ namespace API
 {
     public class Dealer
     {
-        List<Card> deck;
-        List<Card> hand;
+        private List<Card> deck;
+        private List<Card> hand;
         public List<Card> Deck { get => deck; set => deck = value; }
         public List<Card> Hand { get => hand; set => hand = value; }
 
         public void Generate()
         {
             deck = new List<Card> { };
-            List<string> pinta = new List<string>(){ "♥","♦","♣","♠" };
-            List<string> simbolos = new List<string>(){ "A","2","3","4","5","6","7","8","9","10","J","Q","K"};
+            hand = new List<Card> { };
+            List<string> pinta = new List<string>() { "♥", "♦", "♣", "♠" };
+            List<string> simbolos = new List<string>() { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
 
             foreach (string pi in pinta)
             {
@@ -26,21 +27,26 @@ namespace API
                     deck.Add(c);
                 }
             }
-    
+
         }
         public void Randomize()
         {
             Random rnd = new Random();
 
-            this.deck= this.deck.OrderBy(x => (rnd.Next())).ToList();
+            this.deck = this.deck.OrderBy(x => (rnd.Next())).ToList();
 
         }
         public Card Deal()
         {
-            Card c = this.deck.Last();
+            Card c = this.deck[0];
             this.deck.Remove(c);
             return c;
         }
+        public void AddCard (Card c)
+        {
+            hand.Add(c);
+        }
+
 
 
             
