@@ -27,28 +27,19 @@ namespace API
             {
                 this.color= "Black";
             }
-
             int value;
-
             try {
-
                 value = Convert.ToInt32(symbol);
-
             }
             catch (FormatException)
             {
-
                 if (symbol == "A")
                 {
-
                     value = 11;
-
                 }
                 else                
                 {
-
                     value = 10;
-
                 }
             }
             this.score = value;

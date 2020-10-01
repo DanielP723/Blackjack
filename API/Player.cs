@@ -7,27 +7,23 @@ namespace API
     
     
     
-    class Player
+    public class Player
     {
-        List<string> deck;
-        List<string> hand;
-        public List<string> Hand { get => hand; set => hand = value; }
-        public List<string> Deck { get => deck; set => deck = value; }
+        private List<Card> hand;
+        public List<Card> Hand { get => hand; set => hand = value; }
 
-        public void AddCard(string carta)
+        public void AddCardP(Card f)
         {
-            hand.Add(carta);
+            this.hand.Add(f);
         }
 
-        /*public void Init()
+        public void InitP(Card a, Card b)
         {
-            for (int i = 0; i < 3; i++)
-            {
 
-                AddCard(Dealer.Deal(List<string>));
+            hand = new List<Card> { };
+            AddCardP(a);
+            AddCardP(b);
+        }
 
-            }
-
-        }*/
     }
 }

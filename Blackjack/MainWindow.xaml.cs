@@ -24,6 +24,7 @@ namespace Blackjack
     public partial class MainWindow : Window
     {
         Dealer d;
+        Player p;
         int apuesta;
         int saldo;
         public MainWindow(int saldo,int apuesta)
@@ -42,9 +43,6 @@ namespace Blackjack
         {
             d = new Dealer();
             d.Generate();
-            d.Randomize();
-            txtCartas.Text = " ";
-            txtPrueba.Text = " ";
             foreach (Card c in d.Deck)
             {
                 txtCartas.Text += c.Symbol + c.Suit + "";
@@ -53,17 +51,18 @@ namespace Blackjack
 
         private void btnPlantar_Click(object sender, RoutedEventArgs e)
         {
-            txtPrueba.Text = "";
-            Card ca = d.Deal();
-            txtCartas.Text = " ";
-            d.Hand.Add(ca);
-            foreach (Card c in d.Deck)
+            p = new Player();
+            d = new Dealer();
+            d.Generate();
+            foreach (Card card in d.Deck)
             {
-                txtCartas.Text += c.Symbol + c.Suit + " ";
+                txtCartas.Text += card.Symbol + card.Suit + " ";
             }
-            foreach (Card c in d.Hand)
+            p.InitP(d.Deal(),d.Deal());
+            txtPrueba.Text = " ";
+            foreach (Card car in p.Hand)
             {
-                txtPrueba.Text += c.Symbol + c.Suit + " ";
+                txtPrueba.Text += car.Symbol + car.Suit + " ";
             }
         }
 

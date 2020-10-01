@@ -33,23 +33,23 @@ namespace API
         {
             Random rnd = new Random();
 
-            this.deck = this.deck.OrderBy(x => (rnd.Next())).ToList();
+            deck = this.deck.OrderBy(x => (rnd.Next())).ToList();
 
         }
         public Card Deal()
         {
-            Card c = this.deck[0];
-            this.deck.Remove(c);
+            Card c = deck[0];
+            deck.Remove(c);
             return c;
         }
         public void AddCard (Card c)
         {
-            hand.Add(c);
+            this.hand.Add(c);
         }
-
-
-
-            
-        
+        public void Init()
+        {
+            AddCard(Deal());
+            AddCard(Deal());
+        }
     }
 }
