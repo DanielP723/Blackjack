@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Blackjack"
         mc:Ignorable="d"
-        Icon="/Icoon2.png"
-        Title="MainWindow" Height="450" Width="800">
+        Icon="/Icon (1).ico"
+        Title="Blackjack" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -18,12 +18,12 @@
         <Button Name="btnPedir" Content="Pedir Cartas" Visibility="Hidden" HorizontalAlignment="Left" Margin="248,306,0,0" VerticalAlignment="Top" Height="34" Width="112" Background="#FF3C3C3C" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" FontSize="16" OpacityMask="#FFC93B3B" Click="btnPedir_Click"/>
         <Button Name="btnPlantar" Content="Plantar" Visibility="Hidden" HorizontalAlignment="Left" Margin="440,305,0,0" VerticalAlignment="Top" Height="35" Width="112" Background="#FF3C3C3C" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" FontSize="16" Click="btnPlantar_Click" />
         <Label Content=" ♥ ♦ C A R T A S ♣ ♠" HorizontalAlignment="Center" Margin="0,67,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label Content="Victorias" HorizontalAlignment="Left" Margin="580,146,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="35" Width="96" FontSize="20"/>
-        <Label Content="Partidas" HorizontalAlignment="Left" Margin="580,120,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="37" Width="96" FontSize="20"/>
-        <Label Name="lblVictorias" Content="0" HorizontalAlignment="Left" Margin="671,148,0,0" VerticalAlignment="Top" Height="35" Width="96" FontSize="20"/>
-        <Label Content="Derrotas" HorizontalAlignment="Left" Margin="580,175,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="36" Width="91" FontSize="20"/>
-        <Label Name="lblDerrotas" Content="0" HorizontalAlignment="Left" Margin="671,175,0,0" VerticalAlignment="Top" Height="36" Width="104" FontSize="20"/>
-        <Label Name="lblJugadas" Content="0" HorizontalAlignment="Left" Margin="670,122,0,0" VerticalAlignment="Top" Height="35" Width="108" FontSize="20"/>
+        <Label Content="Victorias" HorizontalAlignment="Left" Margin="580,163,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="35" Width="96" FontSize="20"/>
+        <Label Content="Partidas" HorizontalAlignment="Left" Margin="580,132,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="38" Width="96" FontSize="20"/>
+        <Label Name="lblVictorias" Content="0" HorizontalAlignment="Left" Margin="671,163,0,0" VerticalAlignment="Top" Height="34" Width="96" FontSize="20"/>
+        <Label Content="Derrotas" HorizontalAlignment="Left" Margin="580,193,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="36" Width="91" FontSize="20"/>
+        <Label Name="lblDerrotas" Content="0" HorizontalAlignment="Left" Margin="671,194,0,0" VerticalAlignment="Top" Height="36" Width="104" FontSize="20"/>
+        <Label Name="lblJugadas" Content="0" HorizontalAlignment="Left" Margin="671,132,0,0" VerticalAlignment="Top" Height="35" Width="108" FontSize="20"/>
         <Label Name="lblResultados" Content="" HorizontalAlignment="Left" Margin="580,229,0,0" FontWeight="Bold" VerticalAlignment="Top" Height="50" Width="192" FontSize="20"/>
         <Button Name="btnAumentar" Content="Aumentar" HorizontalAlignment="Left" Margin="25,247,0,0" VerticalAlignment="Top" Height="32" Width="90" Background="#FF3C3C3C" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" FontSize="16" OpacityMask="#FFC93B3B" Click="btnAumentar_Click"/>
         <Button Name="btnDisminuir" Content="Disminuir" HorizontalAlignment="Left" Margin="125,247,0,0" VerticalAlignment="Top" Height="32" Width="94" Background="#FF3C3C3C" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" FontSize="16" OpacityMask="#FFC93B3B" Click="btnDisminuir_Click"/>

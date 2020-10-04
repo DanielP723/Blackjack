@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Icon %281%29.ico" />
+    <None Remove="Iconn.ico" />
     <None Remove="StartMenu.jpg" />
   </ItemGroup>
 
@@ -15,6 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Icon (1).ico" />
+    <Resource Include="Iconn.ico" />
     <Resource Include="StartMenu.jpg" />
   </ItemGroup>
 

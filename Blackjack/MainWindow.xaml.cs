@@ -130,14 +130,14 @@ namespace Blackjack
                 apuesta = 0;
                 lblSaldo.Content = saldo;
                 lblApuesta.Content = apuesta;
+                if (saldo == 0)
+                {
+                    btnRestart.Visibility = Visibility.Hidden;
+                    MessageBox.Show("Sin saldo");
+                    Application.Current.Shutdown();
+                }
             }
             MessageBox.Show("Lleva: " + suma);
-            if (saldo == 0)
-            {
-                btnRestart.Visibility = Visibility.Hidden;
-                MessageBox.Show("Sin saldo");
-                Application.Current.Shutdown();
-            }
         }
 
         private void btnPlantar_Click(object sender, RoutedEventArgs e)
@@ -171,6 +171,12 @@ namespace Blackjack
                 apuesta = 0;
                 lblSaldo.Content = saldo;
                 lblApuesta.Content = apuesta;
+                if (saldo == 0)
+                {
+                    btnRestart.Visibility = Visibility.Hidden;
+                    MessageBox.Show("Sin saldo");
+                    Application.Current.Shutdown();
+                }
             }
             else
             {
@@ -190,12 +196,6 @@ namespace Blackjack
                     lblSaldo.Content = saldo;
                     lblApuesta.Content = apuesta;
                 }
-            }
-            if (saldo == 0)
-            {
-                btnRestart.Visibility = Visibility.Hidden;
-                MessageBox.Show("Sin saldo");
-                Application.Current.Shutdown();
             }
         }
 
