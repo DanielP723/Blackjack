@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Blackjack"
         mc:Ignorable="d"
+        Icon="/Icoon2.png"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.Background>
@@ -14,28 +15,41 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Label Content="♥ ♦ BLACKJACK ♣ ♠" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="359" FontSize="36" FontWeight="Bold" Height="52" FontFamily="Consolas"/>
-        <Button Name="btnPedir" Content="Pedir Cartas" HorizontalAlignment="Left" Margin="248,323,0,0" VerticalAlignment="Top" Height="35" Width="112" Background="#FF3C3C3C" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" FontSize="16" OpacityMask="#FFC93B3B" Click="btnPedir_Click"/>
-        <Button Name="btnPlantar" Content="Plantar" HorizontalAlignment="Left" Margin="440,323,0,0" VerticalAlignment="Top" Height="35" Width="112" Background="#FF3C3C3C" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" FontSize="16" Click="btnPlantar_Click" />
-        <TextBlock Name="txtCartas" HorizontalAlignment="Center" Margin="0,98,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="204" Width="304">
-            <TextBlock.Background>
-                <SolidColorBrush Color="#FF872B2B" Opacity="0.4"/>
-            </TextBlock.Background>
-        </TextBlock>
+        <Button Name="btnPedir" Content="Pedir Cartas" Visibility="Hidden" HorizontalAlignment="Left" Margin="248,306,0,0" VerticalAlignment="Top" Height="34" Width="112" Background="#FF3C3C3C" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" FontSize="16" OpacityMask="#FFC93B3B" Click="btnPedir_Click"/>
+        <Button Name="btnPlantar" Content="Plantar" Visibility="Hidden" HorizontalAlignment="Left" Margin="440,305,0,0" VerticalAlignment="Top" Height="35" Width="112" Background="#FF3C3C3C" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" FontSize="16" Click="btnPlantar_Click" />
         <Label Content=" ♥ ♦ C A R T A S ♣ ♠" HorizontalAlignment="Center" Margin="0,67,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label Content="Historial de partidas" HorizontalAlignment="Left" Margin="580,97,0,0" VerticalAlignment="Top" Height="51" Width="192" FontSize="20"/>
-        <Label Content="V" HorizontalAlignment="Left" Margin="637,132,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="51" Width="26" FontSize="20"/>
-        <Label Content="J" HorizontalAlignment="Left" Margin="589,132,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="51" Width="22" FontSize="20"/>
-        <Label Name="lblVictorias" Content="0" HorizontalAlignment="Left" Margin="660,132,0,0" VerticalAlignment="Top" Height="51" Width="24" FontSize="20"/>
-        <Label Content="D" HorizontalAlignment="Left" Margin="692,132,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="51" Width="28" FontSize="20"/>
-        <Label Name="lblDerrotas" Content="0" HorizontalAlignment="Left" Margin="711,132,0,0" VerticalAlignment="Top" Height="51" Width="24" FontSize="20"/>
-        <Label Name="lblJugadas" Content="0" HorizontalAlignment="Left" Margin="602,132,0,0" VerticalAlignment="Top" Height="51" Width="24" FontSize="20"/>
-        <Label Name="lblResultados" Content="Perdedor" HorizontalAlignment="Left" Margin="580,188,0,0" VerticalAlignment="Top" Height="50" Width="192" FontSize="20"/>
-        <Button Name="btnAumentar" Content="Aumentar" HorizontalAlignment="Left" Margin="62,249,0,0" VerticalAlignment="Top" Height="32" Width="90" Background="#FF3C3C3C" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" FontSize="16" OpacityMask="#FFC93B3B" Click="btnAumentar_Click"/>
-        <Button Name="btnDisminuir" Content="Disminuir" HorizontalAlignment="Left" Margin="60,300,0,0" VerticalAlignment="Top" Height="32" Width="94" Background="#FF3C3C3C" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" FontSize="16" OpacityMask="#FFC93B3B" Click="btnDisminuir_Click"/>
+        <Label Content="Victorias" HorizontalAlignment="Left" Margin="580,146,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="35" Width="96" FontSize="20"/>
+        <Label Content="Partidas" HorizontalAlignment="Left" Margin="580,120,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="37" Width="96" FontSize="20"/>
+        <Label Name="lblVictorias" Content="0" HorizontalAlignment="Left" Margin="671,148,0,0" VerticalAlignment="Top" Height="35" Width="96" FontSize="20"/>
+        <Label Content="Derrotas" HorizontalAlignment="Left" Margin="580,175,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="36" Width="91" FontSize="20"/>
+        <Label Name="lblDerrotas" Content="0" HorizontalAlignment="Left" Margin="671,175,0,0" VerticalAlignment="Top" Height="36" Width="104" FontSize="20"/>
+        <Label Name="lblJugadas" Content="0" HorizontalAlignment="Left" Margin="670,122,0,0" VerticalAlignment="Top" Height="35" Width="108" FontSize="20"/>
+        <Label Name="lblResultados" Content="" HorizontalAlignment="Left" Margin="580,229,0,0" FontWeight="Bold" VerticalAlignment="Top" Height="50" Width="192" FontSize="20"/>
+        <Button Name="btnAumentar" Content="Aumentar" HorizontalAlignment="Left" Margin="25,247,0,0" VerticalAlignment="Top" Height="32" Width="90" Background="#FF3C3C3C" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" FontSize="16" OpacityMask="#FFC93B3B" Click="btnAumentar_Click"/>
+        <Button Name="btnDisminuir" Content="Disminuir" HorizontalAlignment="Left" Margin="125,247,0,0" VerticalAlignment="Top" Height="32" Width="94" Background="#FF3C3C3C" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" FontSize="16" OpacityMask="#FFC93B3B" Click="btnDisminuir_Click"/>
         <Label Name="lblSaldo" Content="" HorizontalAlignment="Left" Margin="69,120,0,0" VerticalAlignment="Top" Width="112" FontSize="20"/>
         <Label Content=" ♥ ♦ APUESTAS ♣ ♠" HorizontalAlignment="Left" Margin="25,163,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Label Content=" ♥ ♦ SALDO ♣ ♠" HorizontalAlignment="Left" Margin="41,97,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Label Name="lblApuesta" Content="" HorizontalAlignment="Left" Margin="69,200,0,0" VerticalAlignment="Top" Width="112" FontSize="20"/>
-        <TextBlock Name="txtPrueba" HorizontalAlignment="Left" Margin="589,249,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="83" Width="160"/>
+        <TextBlock Name="txtPlayer" HorizontalAlignment="Center" Margin="0,132,0,0" Text="" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top" Height="67" Width="270">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD69B9B"/>
+                    <GradientStop Color="#FFC77474" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <Button Name="btnStart" Content="Empezar" HorizontalAlignment="Left" Margin="71,338,0,0" VerticalAlignment="Top" Height="38" Width="98" Click="btnStart_Click" Background="#FF3C3C3C" FontWeight="Bold" FontSize="16" Foreground="White" BorderBrush="{x:Null}"/>
+        <TextBlock Name="txtDealer" HorizontalAlignment="Center" Margin="0,225,0,0" Text="" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="270">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD86D6D"/>
+                    <GradientStop Color="#FFBF4141" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <Button Name="btnRestart" Content="Restart" Visibility="Hidden" HorizontalAlignment="Left" Margin="637,340,0,0" VerticalAlignment="Top" Height="34" Width="98" FontWeight="Bold" FontSize="16" BorderBrush="{x:Null}" Background="#FF3C3C3C" Foreground="White" Click="btnRestart_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="265,108,0,0" Text="♥ ♦ Jugador ♣ ♠" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="265,202,0,0" Text="♥ ♦ Tallador ♣ ♠" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
     </Grid>
 </Window>
